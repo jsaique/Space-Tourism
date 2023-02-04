@@ -1,6 +1,7 @@
 //Webpack Configuration
 const path = require("path");
 const htmlWebpackPlugin = require("html-webpack-plugin");
+const loader = require("sass-loader");
 
 module.exports = {
   entry: ["babel-polyfill", "./src/index.js"],
@@ -38,6 +39,11 @@ module.exports = {
           "sass-loader",
         ],
         test: /.(css|sass|scss)$/,
+      },
+      {
+        type: "asset",
+        test: /\.(svg|jpg|png)$/,
+        // loader: "file-loader",
       },
     ],
   },
