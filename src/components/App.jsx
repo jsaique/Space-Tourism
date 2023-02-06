@@ -20,6 +20,7 @@ const App = () => {
     return data;
   };
 
+  //Setting the hashchange and class
   const location = useLocation().pathname;
   const newClass = location.split("/")[1];
   return (
