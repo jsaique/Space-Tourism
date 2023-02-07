@@ -15,7 +15,7 @@ header {
       width: 90%;
       position: absolute;
       border: none;
-      border-bottom: 1px solid rgba(128, 128, 128, 0.501);
+      border-bottom: 1px solid hsla(0, 0%, 50%, 0.501);
       top: 20%;
       right: -4%;
       z-index: 4;
@@ -28,7 +28,7 @@ header {
     @include mixin.displayFlex(row, center, center);
     // display: flex !important;
     width: 65%;
-    background-color: rgba(128, 109, 109, 0.2);
+    background-color: hsla(0, 8%, 46%, 0.2);
     backdrop-filter: blur(10px);
     margin-top: 2em;
     .close {
@@ -36,7 +36,7 @@ header {
     }
     li a {
       display: block;
-      color: rgba(255, 255, 255, 0.7);
+      color: hsla(0, 0%, 100%, 0.7);
       margin-left: 1em;
       margin-right: 1em;
       padding-top: 2em;
@@ -46,10 +46,10 @@ header {
       transition: 0.5s ease;
       font-size: 1vw;
       strong {
-        color: rgb(255, 255, 255);
+        color: hsl(0, 0%, 100%);
       }
       &:hover {
-        border-bottom: 2px solid #fff !important;
+        border-bottom: 2px solid hsla(0, 0%, 100%, 0.25) !important;
       }
     }
   }

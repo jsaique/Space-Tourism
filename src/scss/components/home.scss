@@ -1,0 +1,155 @@
+@use "../util/mixins" as mixin;
+
+.home {
+  .title-home,
+  .button-explore {
+    width: 50%;
+    min-height: 80vh;
+  }
+  .title-home {
+    @include mixin.displayFlex(column, center, flex-end);
+    h1,
+    p {
+      display: block;
+      width: 50%;
+      color: hsl(240, 67%, 94%);
+    }
+    h1 {
+      .title {
+        display: block;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: lighter;
+        font-size: 1.7vw;
+        color: hsla(0, 0%, 100%, 0.83);
+      }
+      .subtitle {
+        display: block;
+        font-family: "Bellefair" serif;
+        font-weight: lighter;
+        font-size: 6vw;
+        color: hsl(0, 0%, 100%);
+      }
+    }
+    p {
+      margin-bottom: 15%;
+      font-family: "Barlow", sans-serif;
+      font-weight: lighter;
+      font-size: 1vw;
+      color: hsla(240, 67%, 94%, 0.6);
+      line-height: 1.8;
+    }
+  }
+  .button-explore {
+    position: relative;
+    .btn {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 20%;
+      right: 30%;
+      width: 15vw;
+      height: 15vw;
+      background-color: hsl(0, 0%, 100%);
+      padding: 2em;
+      border-radius: 100%;
+      cursor: pointer;
+      // transition: 0.5s;
+      z-index: 1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(0, 0%, 100%, 0.15);
+        opacity: 0;
+        border-radius: 100%;
+        transition: 500ms linear, 600ms ease-in-out;
+        z-index: -1;
+      }
+
+      &:hover::after {
+        opacity: 1;
+        transform: scale(1.5);
+      }
+
+      span {
+        display: block;
+        width: 100%;
+        font-family: "Bellefair" serif;
+        font-size: 2.4vw;
+        text-align: center;
+        color: hsl(0, 0%, 0%);
+      }
+    }
+  }
+}
+
+// Tablet
+@media (max-width: 48em) {
+  .home {
+    .title-home,
+    .button-explore {
+      width: 100%;
+      min-height: initial;
+    }
+    .title-home {
+      margin-top: 3em;
+      h1,
+      p {
+        text-align: center;
+      }
+      h1 {
+        .title {
+          font-size: 2.5vw;
+        }
+        .subtitle {
+          font-size: 18vw;
+        }
+      }
+      p {
+        width: 60%;
+        font-size: 2.5vw;
+      }
+    }
+    .button-explore {
+      @include mixin.displayFlex(row, center, center);
+      position: inherit;
+      margin-bottom: 6em;
+      .btn {
+        position: inherit;
+        width: 25vw;
+        height: 25vw;
+        span {
+          font-size: 4vw;
+        }
+      }
+    }
+  }
+}
+
+// Phone
+@media (max-width: 28.125em) {
+  .home {
+    .title-home {
+      h1 {
+        width: 80%;
+        .title {
+          font-size: 4.5vw;
+        }
+        .subtitle {
+          font-size: 23vw;
+        }
+      }
+      p {
+        width: 80%;
+        font-size: 4vw;
+      }
+    }
+    .button-explore {
+      margin-bottom: 3em;
+    }
+  }
+}
