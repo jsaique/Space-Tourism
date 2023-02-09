@@ -9,7 +9,7 @@ import img_1 from "../assets/crew/image-mark-shuttleworth.png";
 import img_2 from "../assets/crew/image-victor-glover.png";
 import img_3 from "../assets/crew/image-anousheh-ansari.png";
 
-const crew = ({ data }) => {
+const CrewComponent = ({ data }) => {
   const [Crew, setCrew] = useState(null);
   let glide;
   useEffect(() => {
@@ -88,4 +88,4 @@ const crew = ({ data }) => {
   );
 };
 
-export default crew;
+export default CrewComponent;

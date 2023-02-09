@@ -8,7 +8,7 @@ import img_1 from "../assets/destination/image-mars.png";
 import img_2 from "../assets/destination/image-europa.png";
 import img_3 from "../assets/destination/image-titan.png";
 
-export default function destination({ data }) {
+const DestinationComponent = ({ data }) => {
   const [destinations, setDestination] = useState(null);
   let glide;
   useEffect(() => {
@@ -107,4 +107,6 @@ export default function destination({ data }) {
       )}
     </div>
   );
-}
+};
+
+export default DestinationComponent;
