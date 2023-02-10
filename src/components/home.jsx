@@ -3,14 +3,11 @@ import { Link } from "react-router-dom";
 
 const home = () => {
   return (
-    <div className="home wrapper">
+    <main className="home wrapper">
       <div className="title-home">
         <h1>
-          <span className="title">
-            S O, Y O U &nbsp;&nbsp;W A N T&nbsp;&nbsp;T O&nbsp;&nbsp; T R A V E
-            L &nbsp;&nbsp; T O &nbsp;&nbsp;
-          </span>
-          <span className="subtitle">SPACE</span>
+          <span className="title">So, you want to travel to</span>
+          <span className="subtitle">Space</span>
         </h1>
         <p>
           Let’s face it; if you want to go to space, you might as well genuinely
@@ -26,7 +23,7 @@ const home = () => {
           </div>
         </Link>
       </div>
-    </div>
+    </main>
   );
 };
 

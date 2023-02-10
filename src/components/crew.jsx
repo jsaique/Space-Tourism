@@ -8,6 +8,8 @@ import img_0 from "../assets/crew/image-douglas-hurley.png";
 import img_1 from "../assets/crew/image-mark-shuttleworth.png";
 import img_2 from "../assets/crew/image-victor-glover.png";
 import img_3 from "../assets/crew/image-anousheh-ansari.png";
+//Icon
+import LoadingImg from "../assets/shared/loading.png";
 
 const CrewComponent = ({ data }) => {
   const [Crew, setCrew] = useState(null);
@@ -36,7 +38,7 @@ const CrewComponent = ({ data }) => {
     }
   };
   return (
-    <div className="crew wrapper">
+    <section className="crew wrapper">
       {Crew ? (
         <div className="glide">
           <div className="glide__track" data-glide-el="track">
@@ -46,19 +48,19 @@ const CrewComponent = ({ data }) => {
                   <div className="content crew">
                     <div className="title-img">
                       <h1>
-                        <span>0 2</span> M E E T&nbsp;&nbsp;&nbsp; Y O U R
-                        &nbsp;&nbsp;&nbsp; C R E W
+                        <span>02</span> Meet your crew
                       </h1>
                       <div className="img-mobile">
                         <img src={imgIndex(index)} alt="crew image" />
                       </div>
                       <div className="slider">
                         <div className="content-slider">
-                          <h1>{item.name.toUpperCase()}</h1>
+                          <h3>{item.role.toUpperCase()}</h3>
+                          <h2>{item.name.toUpperCase()}</h2>
                           <p>{item.bio}</p>
                           <div className="mobile-slider-header">
-                            <h2>{item.role.toUpperCase()}</h2>
-                            <h3>{item.name.toUpperCase()}</h3>
+                            <h3>{item.role.toUpperCase()}</h3>
+                            <h4>{item.name.toUpperCase()}</h4>
                           </div>
                           <div
                             className="bullets"
@@ -82,9 +84,11 @@ const CrewComponent = ({ data }) => {
           </div>
         </div>
       ) : (
-        <h1>Loading...</h1>
+        <span className="loading">
+          <img src={LoadingImg} alt="" />
+        </span>
       )}
-    </div>
+    </section>
   );
 };
 

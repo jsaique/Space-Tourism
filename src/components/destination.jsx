@@ -7,6 +7,8 @@ import img_0 from "../assets/destination/image-moon.png";
 import img_1 from "../assets/destination/image-mars.png";
 import img_2 from "../assets/destination/image-europa.png";
 import img_3 from "../assets/destination/image-titan.png";
+//Icon
+import LoadingImg from "../assets/shared/loading.png";
 
 const DestinationComponent = ({ data }) => {
   const [destinations, setDestination] = useState(null);
@@ -37,7 +39,7 @@ const DestinationComponent = ({ data }) => {
   //     default:
   //       console.log("error loading images");
   //   }
-  //if else
+  //if else for readablility
   const imgIndex = (index) => {
     if (index === 0) {
       return img_0;
@@ -53,7 +55,7 @@ const DestinationComponent = ({ data }) => {
   };
 
   return (
-    <div className="destination wrapper">
+    <section className="destination wrapper">
       {destinations ? (
         <div className="glide">
           <div className="glide__track" data-glide-el="track">
@@ -80,7 +82,7 @@ const DestinationComponent = ({ data }) => {
                       </div>
                       <div className="slider">
                         <div className="content-slider">
-                          <h1>{item.name.toUpperCase()}</h1>
+                          <h2>{item.name.toUpperCase()}</h2>
                           <p>{item.description}</p>
                           <hr />
                           <div className="info-slider">
@@ -103,9 +105,11 @@ const DestinationComponent = ({ data }) => {
           </div>
         </div>
       ) : (
-        <h1>Loading... </h1>
+        <span className="loading">
+          <img src={LoadingImg} alt="" />
+        </span>
       )}
-    </div>
+    </section>
   );
 };
 

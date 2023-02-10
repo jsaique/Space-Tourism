@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // Component child
 import SliderComponent from "./technology.slider";
 //Icon
+import LoadingImg from "../assets/shared/loading.png";
 
 const TechnologyComponent = ({ data }) => {
   const [technology, setTechnology] = useState(null);
@@ -30,7 +31,9 @@ const TechnologyComponent = ({ data }) => {
           setItem={setItem}
         />
       ) : (
-        <h1>Loading...</h1>
+        <span className="loading">
+          <img src={LoadingImg} alt="" />
+        </span>
       )}
     </>
   );

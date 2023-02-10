@@ -2,21 +2,28 @@
 .content {
   &.crew {
     h1 {
+      text-transform: uppercase;
+      letter-spacing: 4.72px;
       margin-bottom: 7vw;
     }
-    // .header-slider {
-    //   h2 {
-    //     font-family: "Bellefair", serif;
-    //     color: rgb(172, 142, 142);
-    //     font-weight: lighter;
-    //     padding: 0;
-    //   }
-    // }
     .img-mobile {
       display: none;
     }
     .slider {
       .content-slider {
+        h2 {
+          font-family: "Bellefair", serif;
+          font-weight: 400;
+          font-size: 3vw;
+          margin-top: 0;
+          color: hsl(0, 0%, 100%);
+        }
+        h3 {
+          font-family: "Bellefair", serif;
+          font-weight: lighter;
+          font-size: 2vw;
+          color: hsla(0, 0%, 100%, 0.5);
+        }
         .mobile-slider-header {
           display: none;
         }
@@ -69,9 +76,13 @@
         }
         .slider {
           .content-slider {
-            h1 {
+            h2 {
               text-align: center;
               font-size: 7vw;
+            }
+            h3 {
+              text-align: center;
+              font-size: 4vw;
             }
             p {
               width: 70%;
@@ -115,23 +126,23 @@
             .mobile-slider-header {
               display: block;
               width: 100%;
-              h2,
-              h3 {
+              h3,
+              h4 {
                 font-family: "Bellefair", serif;
                 padding: 0;
                 font-weight: lighter;
                 text-align: center;
               }
-              h2 {
+              h3 {
                 color: hsla(0, 0%, 100%, 0.5);
                 font-size: 4vw;
               }
-              h3 {
+              h4 {
                 color: hsla(0, 0%, 100%);
                 font-size: 7vw;
               }
             }
-            h1 {
+            h2 {
               display: none;
             }
             p {

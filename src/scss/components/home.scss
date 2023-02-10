@@ -17,9 +17,11 @@
     h1 {
       .title {
         display: block;
+        font-size: 1.7vw;
+        text-transform: uppercase;
+        letter-spacing: 4.72px;
         font-family: "Barlow Condensed", sans-serif;
         font-weight: lighter;
-        font-size: 1.7vw;
         color: hsla(231, 77%, 90%);
       }
       .subtitle {
@@ -27,6 +29,7 @@
         font-family: "Bellefair" serif;
         font-weight: 400;
         font-size: 8vw;
+        text-transform: uppercase;
         color: hsl(0, 0%, 100%);
       }
     }
@@ -48,7 +51,7 @@
       bottom: 20%;
       right: 30%;
       width: 14vw;
-      height: 14vw;
+      aspect-ratio: 1;
       background-color: hsl(0, 0%, 100%);
       padding: 2rem;
       border-radius: 100%;

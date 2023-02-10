@@ -19,7 +19,6 @@ const SliderComponent = ({ current, index, setItem }) => {
       return false;
     }
   };
-  console.log(current);
   const imgIndexResponsive = (index) => {
     if (index === 0) {
       return img_3;
@@ -32,11 +31,10 @@ const SliderComponent = ({ current, index, setItem }) => {
     }
   };
   return (
-    <div className="technology-wrapper">
+    <section className="technology-wrapper">
       <div className="technology-header">
         <h1>
-          <span> 0 3 </span>S P A C E &nbsp;&nbsp;&nbsp;L A U N C H
-          &nbsp;&nbsp;&nbsp; 1 0 1
+          <span>03</span> Space launch 101
         </h1>
       </div>
       <div className="technology-body">
@@ -92,7 +90,7 @@ const SliderComponent = ({ current, index, setItem }) => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

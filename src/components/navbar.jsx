@@ -18,7 +18,7 @@ const navbar = ({ currentRoute }) => {
         <img alt="logo" src={icon} />
         <hr />
       </div>
-      <div
+      <button
         className="bars-navbar"
         style={isShowing ? { display: "none" } : { display: "flex" }}
       >
@@ -29,21 +29,18 @@ const navbar = ({ currentRoute }) => {
             setIsShowing(!isShowing);
           }}
         />
-      </div>
+      </button>
       <ul
         className="navbar"
         style={isShowing ? { right: "0px" } : { right: "-50vh" }}
       >
-        <div
-          className="close"
-          // style={isShowing ? { display: "block" } : { display: "none" }}
-        >
+        <button className="close">
           <img
             src={closeIcon}
             alt="close icon"
             onClick={() => setIsShowing(!isShowing)}
           />
-        </div>
+        </button>
         <li>
           <Link
             to="/"
@@ -53,7 +50,7 @@ const navbar = ({ currentRoute }) => {
                 : { borderBottom: "2px solid transparent" }
             }
           >
-            <strong>0 0</strong>&nbsp; H O M E
+            <strong>00</strong> Home
           </Link>
         </li>
         <li>
@@ -65,7 +62,7 @@ const navbar = ({ currentRoute }) => {
                 : { borderBottom: "2px solid transparent" }
             }
           >
-            <strong>0 1</strong>&nbsp; D E S T I N A T I O N
+            <strong>01</strong> Destination
           </Link>
         </li>
         <li>
@@ -77,7 +74,7 @@ const navbar = ({ currentRoute }) => {
                 : { borderBottom: "2px solid transparent" }
             }
           >
-            <strong>0 2</strong>&nbsp; C R E W
+            <strong>02</strong> Crew
           </Link>
         </li>
         <li>
@@ -89,7 +86,7 @@ const navbar = ({ currentRoute }) => {
                 : { borderBottom: "2px solid transparent" }
             }
           >
-            <strong>0 3</strong>&nbsp; T E C H N O L O G Y
+            <strong>03</strong> Technology
           </Link>
         </li>
       </ul>
