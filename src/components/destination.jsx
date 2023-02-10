@@ -48,7 +48,7 @@ const DestinationComponent = ({ data }) => {
     } else if (index === 3) {
       return img_3;
     } else {
-      console.log("error loading images");
+      return false;
     }
   };
 
