@@ -7,7 +7,9 @@ const home = () => {
       <div className="title-home">
         <h1>
           <span className="title">So, you want to travel to</span>
-          <span className="subtitle">Space</span>
+          <span className="subtitle" id="subtitle">
+            Space
+          </span>
         </h1>
         <p>
           Let’s face it; if you want to go to space, you might as well genuinely

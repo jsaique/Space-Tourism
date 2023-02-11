@@ -1,5 +1,4 @@
 @use "../util/mixins" as mix;
-
 .technology-wrapper {
   width: 90%;
   margin-left: 10%;
@@ -25,7 +24,6 @@
     .control-slider {
       @include mix.displayFlex(column, flex-start, center);
       position: absolute;
-      width: 100%;
       left: 10%;
       gap: 1.5rem;
       button {

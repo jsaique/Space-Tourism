@@ -55,7 +55,7 @@ const CrewComponent = ({ data }) => {
                       </div>
                       <div className="slider">
                         <div className="content-slider">
-                          <h3>{item.role.toUpperCase()}</h3>
+                          <h5>{item.role.toUpperCase()}</h5>
                           <h2>{item.name.toUpperCase()}</h2>
                           <p>{item.bio}</p>
                           <div className="mobile-slider-header">

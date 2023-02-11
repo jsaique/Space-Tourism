@@ -17,16 +17,16 @@
     h1 {
       .title {
         display: block;
+        font-family: "Barlow Condensed", sans-serif;
         font-size: 1.7vw;
         text-transform: uppercase;
         letter-spacing: 4.72px;
-        font-family: "Barlow Condensed", sans-serif;
         font-weight: lighter;
         color: hsla(231, 77%, 90%);
       }
       .subtitle {
         display: block;
-        font-family: "Bellefair" serif;
+        font-family: "Bellefair", serif;
         font-weight: 400;
         font-size: 8vw;
         text-transform: uppercase;
@@ -81,7 +81,7 @@
       span {
         display: block;
         width: 100%;
-        font-family: "Bellefair" serif;
+        font-family: "Bellefair", serif;
         font-size: 2vw;
         text-align: center;
         color: hsl(0, 0%, 0%);

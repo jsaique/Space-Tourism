@@ -18,7 +18,7 @@
           margin-top: 0;
           color: hsl(0, 0%, 100%);
         }
-        h3 {
+        h5 {
           font-family: "Bellefair", serif;
           font-weight: lighter;
           font-size: 2vw;
@@ -26,9 +26,6 @@
         }
         .mobile-slider-header {
           display: none;
-        }
-        h1 {
-          font-family: "Bellefair", serif;
         }
         p {
           font-family: "Barlow", sans-serif;
@@ -80,7 +77,7 @@
               text-align: center;
               font-size: 7vw;
             }
-            h3 {
+            h5 {
               text-align: center;
               font-size: 4vw;
             }
@@ -142,7 +139,8 @@
                 font-size: 7vw;
               }
             }
-            h2 {
+            h2,
+            h5 {
               display: none;
             }
             p {
